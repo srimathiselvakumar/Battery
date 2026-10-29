@@ -6,7 +6,6 @@ import TelemetryCharts from './components/TelemetryCharts';
 import ESP32Simulator from './components/ESP32Simulator';
 import MLClassifierView from './components/MLClassifierView';
 import AlertsLogTable from './components/AlertsLogTable';
-import ESP32FirmwareGuide from './components/ESP32FirmwareGuide';
 import { api } from './services/api';
 
 export default function App() {
@@ -201,10 +200,6 @@ export default function App() {
             onAlertUpdated={() => api.getAlerts().then(setAlerts)}
             onClearAlerts={handleClearAlerts}
           />
-        )}
-
-        {activeTab === 'firmware' && (
-          <ESP32FirmwareGuide />
         )}
       </main>
 

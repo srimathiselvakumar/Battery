@@ -1,12 +1,11 @@
 import React from 'react';
-import { Activity, ShieldCheck, Cpu, AlertTriangle, Code2, Database, Wifi } from 'lucide-react';
+import { Activity, ShieldCheck, Cpu, AlertTriangle, Database, Wifi } from 'lucide-react';
 
 export default function Navbar({ activeTab, setActiveTab, isWsConnected, isMongoConnected, onSeedData, isSeeding }) {
   const navItems = [
     { id: 'dashboard', label: 'Live Dashboard', icon: Activity },
     { id: 'ml', label: 'AI Fault Detector', icon: Cpu },
-    { id: 'alerts', label: 'Safety Events', icon: AlertTriangle },
-    { id: 'firmware', label: 'ESP32 Hardware & Wiring', icon: Code2 }
+    { id: 'alerts', label: 'Safety Events', icon: AlertTriangle }
   ];
 
   return (
