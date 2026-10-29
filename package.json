@@ -1,0 +1,23 @@
+{
+  "name": "battery-safety-iot-ml",
+  "version": "1.0.0",
+  "description": "Machine Learning Enabled IoT Framework for Real-Time Environmental Monitoring and Automated Safety Response in Lithium-Ion Batteries",
+  "scripts": {
+    "start": "cd backend && node server.js",
+    "backend": "cd backend && node server.js",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "lithium-ion-battery",
+    "esp32",
+    "iot",
+    "stacking-classifier",
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "Saranya S, Srijith S M, Apoorvanathan S, Pranav Karthick S K, Sanjeev G S",
+  "license": "ISC"
+}
